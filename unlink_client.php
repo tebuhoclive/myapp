@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Execute the SQL query
         if ($conn->query($sql_unlink_contacts) === TRUE) {
-            echo "Client unlinked successfully";
+            // echo "Client unlinked successfully";
         } else {
-            echo "Error unlinking client: " . $conn->error;
+            // echo "Error unlinking client: " . $conn->error;
         }
 
         // Close the database connection

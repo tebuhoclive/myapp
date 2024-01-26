@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql_link_contact = "INSERT INTO client_contacts (client_id, contact_id) VALUES ('$client_id', '$contact_id')";
         
         if ($conn->query($sql_link_contact) === TRUE) {
-            echo "Contact linked to client successfully";
+            // echo "Contact linked to client successfully";
         } else {
             echo "Error linking contact to client: " . $conn->error;
         }

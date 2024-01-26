@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($client_name)) {
         $sql = "INSERT INTO clients (client_name, client_code) VALUES ('$client_name', '$client_code')";
         if ($conn->query($sql) === TRUE) {
-            echo "New client created successfully";
+            // echo "New client created successfully";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
